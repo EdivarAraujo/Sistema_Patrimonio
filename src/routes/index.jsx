@@ -1,10 +1,9 @@
-import AuthRoutes from './auth.routes'
-import SignInRoutes from './signin.routes'
-
 import React from 'react'
+import AuthenticatedRoutes from "./authenticated.routes";
+
 
 export default function Routes() {
-
-  return 1==2 ? <AuthRoutes/> : <SignInRoutes/>
-
+  return (
+    <AuthenticatedRoutes/>
+  )
 }

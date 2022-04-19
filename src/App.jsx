@@ -1,19 +1,10 @@
+import React from 'react'
+import Routes from './routes'
 
-import { useState } from 'react'
-import logo from './logo.svg'
-import Routes from "./routes"
-
-import './App.css'
-
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <div className="App">
-      <Routes/>
-    </div>
-  )
+    <Routes/>
+   )
 }
 
 export default App
