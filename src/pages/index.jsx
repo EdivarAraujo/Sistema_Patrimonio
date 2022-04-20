@@ -1,5 +1,10 @@
-import Home from './Home/index';
+
+import Movimentacoes from './Movimentacoes'
+import Colaboradores from './Colaboradores'
+import Equipamentos from './Equipamentos'
 
 export {
-    Home
+    Movimentacoes,
+    Colaboradores,
+    Equipamentos
 }

@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import '../css/style.scss';
 
-import {Home} from '../pages';
+import {Colaboradores,Equipamentos, Movimentacoes} from '../pages';
 
 function AuthenticatedRoutes() {
 
@@ -21,7 +21,10 @@ function AuthenticatedRoutes() {
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/colaboradores" element={<Colaboradores/>} />
+        <Route exact path="/equipamentos" element={<Equipamentos/>} />
+        <Route exact path="/movimentacoes" element={<Movimentacoes/>} />
+        
       </Routes>
     </>
   );
