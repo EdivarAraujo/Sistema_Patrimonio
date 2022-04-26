@@ -5,27 +5,9 @@ import { BaseTable } from '../../components';
 import ContentLayout from '../../container';
 
 
-const dataFake = [
-
-  {
-    idColaborator: '1',
-    nome:'Edivaldo',
-    descricaoTipo: 'AUX. Caminhoneiro'
-  },
-  {
-    idColaborator: '2',
-    nome:'Edivaldo',
-    descricaoTipo: 'Caminhoneiro'
-  }
-
-
-
-
-
-]
 
 const Colaboradores = () => {
-const [data, setData] = useState([...dataFake]);
+const [data, setData] = useState([]);
 const [loading, setLoading] = useState(false);
 // const navigate = useHistory();
 
