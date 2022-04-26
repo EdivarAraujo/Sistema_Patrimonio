@@ -1,8 +1,10 @@
+import { color } from '@mui/system'
+
 export const columns = () => {
   const columnsTable = [
     {
       name: 'ID',
-      selector: 'idColaborator',
+      selector: 'idColaborador',
       sortable: true
     },
     {
@@ -13,7 +15,7 @@ export const columns = () => {
     },
     {
       name: 'Função',
-      selector: 'descricaoTipo',
+      selector: 'numeroChip1',
       sortable: true,
       grow: 1
     }
