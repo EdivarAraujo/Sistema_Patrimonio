@@ -104,7 +104,7 @@ function Sidebar({
             </ul>
             <ul className="mt-3">
               {/* Dashboard */}
-              <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/colaboradores' && 'bg-slate-900'}`}>
+              <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/' && 'bg-slate-900'}`}>
                 <NavLink end to="/colaboradores" className={`block text-slate-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-slate-200'}`}>
                   <div className="flex items-center">
                   <PersonIcon/>
