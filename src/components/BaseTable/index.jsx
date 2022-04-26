@@ -69,7 +69,6 @@ function BaseTable(props) {
     },
     dense: dense,
     sortIcon: <ArrowDownwardIcon />,
-    customStyles: styleRows,
     conditionalRowStyles: conditionalRowStyles || [],
     paginationRowsPerPageOptions: [10,20,40,50,100,250],
     onRowClicked: (row) => actionRow(row)
