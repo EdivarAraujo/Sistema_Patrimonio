@@ -1,33 +1,45 @@
 import React, { useEffect } from 'react';
-import {
-  Routes,
-  Route,
-  useLocation
-} from 'react-router-dom';
-import '../css/style.scss';
 
+import {  Routes, Route  } from "react-router-dom";
 import {Colaboradores,Equipamentos, Movimentacoes} from '../pages';
 
-function AuthenticatedRoutes() {
 
-  const location = useLocation();
+// export const PrivateRoute = ({ component: Component, ...rest }) => {
 
-  useEffect(() => {
-    document.querySelector('html').style.scrollBehavior = 'auto'
-    window.scroll({ top: 0 })
-    document.querySelector('html').style.scrollBehavior = ''
-  }, [location.pathname]); // triggered on route change
+//   return (
+//     <Route
+//       {...rest}
+//       render={(props) =>
+//         1 == 1 ? (
+//           <Component {...props} />
+//         ) : (
+//           <Redirect to={{ pathname: "/", state: { from: props.location } }} />
+//         )
+//       }
+//     />
+//   );
+// };
+
+
+
+ const AuthenticatedRoutes = () => {
 
   return (
-    <>
-      <Routes>
-        <Route exact path="/colaboradores" element={<Colaboradores/>} />
+    <Routes>
+        {/* Login */}
+        {/* <Route element={} exact path="/" /> */}
+
+        <Route exact path="/" element={<Colaboradores/>} />
         <Route exact path="/equipamentos" element={<Equipamentos/>} />
         <Route exact path="/movimentacoes" element={<Movimentacoes/>} />
-        
-      </Routes>
-    </>
+        {/* Page not found */}
+        {/* <PrivateRoute path="*" element={Error404} /> */}
+
+    </Routes>
   );
-}
+};
+
+
 
 export default AuthenticatedRoutes;
+
