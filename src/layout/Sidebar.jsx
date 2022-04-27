@@ -5,6 +5,10 @@ import SidebarLinkGroup from './SidebarLinkGroup';
 import PhonelinkIcon from '@mui/icons-material/Phonelink';
 import PersonIcon from '@mui/icons-material/Person';
 import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import HomeWorkIcon from '@mui/icons-material/HomeWork';
+import BadgeIcon from '@mui/icons-material/Badge';
+
 
 function Sidebar({
   sidebarOpen,
@@ -104,8 +108,8 @@ function Sidebar({
             </ul>
             <ul className="mt-3">
               {/* Dashboard */}
-              <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/colaboradores' && 'bg-slate-900'}`}>
-                <NavLink end to="/colaboradores" className={`block text-slate-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-slate-200'}`}>
+              <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/' && 'bg-slate-900'}`}>
+                <NavLink end to="/" className={`block text-slate-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-slate-200'}`}>
                   <div className="flex items-center">
                   <PersonIcon/>
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Colaboradores</span>
@@ -120,6 +124,42 @@ function Sidebar({
                   <div className="flex items-center">
                   <CompareArrowsIcon/>
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Movimentações</span>
+                  </div>
+                </NavLink>
+              </li>
+            </ul>
+            <ul className="mt-3">
+              {/* Dashboard */}
+              <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/unidades' && 'bg-slate-900'}`}>
+                <NavLink end to="/unidades" className={`block text-slate-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-slate-200'}`}>
+                  <div className="flex items-center">
+                  <ApartmentIcon/>
+
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Unidades</span>
+                  </div>
+                </NavLink>
+              </li>
+            </ul>
+            <ul className="mt-3">
+              {/* Dashboard */}
+              <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/setores' && 'bg-slate-900'}`}>
+                <NavLink end to="/setores" className={`block text-slate-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-slate-200'}`}>
+                  <div className="flex items-center">
+                  <HomeWorkIcon/>
+
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Setores</span>
+                  </div>
+                </NavLink>
+              </li>
+            </ul>
+            <ul className="mt-3">
+              {/* Dashboard */}
+              <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/funcao' && 'bg-slate-900'}`}>
+                <NavLink end to="/funcao" className={`block text-slate-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-slate-200'}`}>
+                  <div className="flex items-center">
+                  <BadgeIcon/>
+
+                    <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Função</span>
                   </div>
                 </NavLink>
               </li>

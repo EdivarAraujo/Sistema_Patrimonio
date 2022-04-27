@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import {  Routes, Route  } from "react-router-dom";
-import {Colaboradores,Equipamentos, Movimentacoes} from '../pages';
+import {Colaboradores,Equipamentos, Movimentacoes, Setores, Unidades, Funcao, } from '../pages';
+
 
 
 // export const PrivateRoute = ({ component: Component, ...rest }) => {
@@ -26,15 +27,12 @@ import {Colaboradores,Equipamentos, Movimentacoes} from '../pages';
 
   return (
     <Routes>
-        {/* Login */}
-        {/* <Route element={} exact path="/" /> */}
-
         <Route exact path="/" element={<Colaboradores/>} />
         <Route exact path="/equipamentos" element={<Equipamentos/>} />
         <Route exact path="/movimentacoes" element={<Movimentacoes/>} />
-        {/* Page not found */}
-        {/* <PrivateRoute path="*" element={Error404} /> */}
-
+        <Route exact path="/unidades" element={<Unidades/>} />
+        <Route exact path="/setores" element={<Setores/>} />
+        <Route exact path="/funcao" element={<Funcao/>} />
     </Routes>
   );
 };

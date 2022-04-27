@@ -2,9 +2,16 @@
 import Movimentacoes from './Movimentacoes'
 import Colaboradores from './Colaboradores'
 import Equipamentos from './Equipamentos'
+import Unidades from './Unidades'
+import Setores from './Setores'
+import Funcao from './Funcao'
+
 
 export {
     Movimentacoes,
     Colaboradores,
-    Equipamentos
+    Equipamentos,
+    Unidades,
+    Setores,
+    Funcao
 }
