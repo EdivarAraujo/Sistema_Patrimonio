@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import avatar from '../images/logoCirculo.png';
+import avatar from '../assets/images/logoCirculo.png';
 import SidebarLinkGroup from './SidebarLinkGroup';
 import PhonelinkIcon from '@mui/icons-material/Phonelink';
 import PersonIcon from '@mui/icons-material/Person';

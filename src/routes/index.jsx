@@ -1,10 +1,9 @@
 import React from 'react'
 import AuthenticatedRoutes from "./authenticated.routes";
+import SingIn from './auth.routes'
 
 
 export default function Routes() {
-  return (
-    // <h1>teste</h1>
-    <AuthenticatedRoutes/>
-  )
+  return 1 == 2 ? <AuthenticatedRoutes/> : <SingIn/> 
+    
 }
