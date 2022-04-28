@@ -7,7 +7,7 @@ import api from "../../services/api";
 import { data } from 'autoprefixer';
 
 
-const Colaboradores = () => {
+const Funcao = () => {
 const [data, setData] = useState([]);
 const [loading, setLoading] = useState(false);
 
@@ -15,7 +15,7 @@ const [loading, setLoading] = useState(false);
  
 
   useEffect(() => {
-api.get("findAllContributors")
+api.get("findAllFunctions")
 .then((resposta) => {
   const {data} = resposta.data
   console.log(resposta.data)
@@ -30,14 +30,14 @@ api.get("findAllContributors")
 const propsColumn = columns();
 
   return (
-    <ContentLayout title="colaboradores">
+    <ContentLayout title="funcao">
         <BaseTable
-          placeholderInput="Buscar colaborador"
+          placeholderInput="Buscar funcao"
           columns={propsColumn}
           titleButtonAction=""
           data={data}
           // onActionButton={() => navigate.push("/colaboradores")}
-          loaderTitle="Buscando colaboradores..."
+          loaderTitle="Buscando Funcao..."
           loaderActive={loading}
           imprimir={true}
           exportar={true}
@@ -48,4 +48,4 @@ const propsColumn = columns();
   )
 }
 
-export default Colaboradores;
+export default Funcao;
