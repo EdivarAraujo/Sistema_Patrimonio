@@ -1,129 +1,238 @@
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Roboto:wght@400;700&display=swap');
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.root-login {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/images/bj.jpeg);
+  background-size: cover;
+  top: 0;
+  left: 0;
+  display: flex;
+}
 
-.container-login{
+.container-login {
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: rgb(0, 102, 255);
-  justify-content:center;
-  border-width: 1px;
-
+  justify-content: center;
+  z-index: 9;
 }
-.wrap-login{
-  width: 40%;
-  height: 50%;
-  border-radius: 15px;;
+
+.wrap-login {
+  width: 30%;
+  height: 60%;
+  border-radius: 15px;
   justify-content: center;
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #ffffff;
   min-width: 40rem;
-  overflow: hidden;  -webkit-box-shadow: 25px 10px 71px -2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 25px 10px 71px -2px rgba(0,0,0,0.75);
-  box-shadow: 25px 10px 71px -2px rgba(0,0,0,0.75);
+  min-height: 22rem;
+  overflow: hidden;
+  -webkit-box-shadow: 25px 10px 71px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 25px 10px 71px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 10px 71px -2px rgba(0, 0, 0, 0.75);
 }
-  .login-form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin: 2rem 1rem 0 1rem;
-    justify-content:center;
-    align-items:center;
-    border-width: 1px;
-    background-color: burlywood;
-    border-radius: 1rem
-}
-.login-form-title{
-  width: 100%;
-  display: block;
-  font-size: 30px;
-  color: black;
-  font-family: 'Roboto', sans-serif;
 
-  line-height: 1.2;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  -webkit-box-shadow: -3px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -3px 0px 25px -1px rgba(0, 0, 0, 0.75);
+}
+
+.login-form-title {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
   text-align: center;
 }
 
-.login-form-title img {
+.login-form-title .title-one {
+  display: flex;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  height: 50%;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1em;
+}
+
+.login-form-title .title-two {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login-form-title .title-two img {
   display: block;
-  width: 90px;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
-  
 }
-.wrap-input{
+
+.title-form {
+  margin-bottom: 2rem;
+  font-size: 40px;
+}
+
+.wrap-input {
   width: 50%;
   position: relative;
   border-bottom: 2px solid azure;
   margin-bottom: 37px;
+  background-color: rgba(204, 204, 204, 0.2);
+  border-radius: 10px;
 }
-.input{
+
+.input {
   font-size: 15px;
-  color: azure;
+  color: #000;
   line-height: 1.2;
   display: block;
 
-  width: 100%; 
+  width: 100%;
   height: 45px;
   background-color: transparent;
 
   padding: 0 5px;
 }
 
-.focus-input{
+.focus-input {
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
-
   top: 0;
   left: 0;
-
   pointer-events: none;
   color: #adadad;
 }
-.focus-input::before{
-  content:"";
+.focus-input::before {
+  content: '';
   display: block;
   position: absolute;
   bottom: -2px;
   left: 0;
   width: 0;
   height: 2px;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
-
-  background-color: -webkit-linear-gradient(to left #21d4fd, #b721ff);
-  background-color: -o-linear-gradient(to left #21d4fd, #b721ff);
-  background-color:  -moz-linear-gradient(to left #21d4fd, #b721ff);
-  background-color: linear-gradient(to left #21d4fd, #b721ff);
-
+  background: #154e91;
 }
-.focus-input::after{
+
+.focus-input::after {
   font-size: 15px;
   color: #999999;
   line-height: 1.2;
-
   content: attr(data-placeholder);
   display: block;
-  width:100%;
+  width: 100%;
   position: absolute;
   top: 16px;
   left: 0;
-  padding-left:5px;
-
+  padding-left: 5px;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
+}
+
+.input:focus {
+  outline: 0;
+}
+.input:focus + .focus-input::after {
+  top: -15px;
+}
+
+.input:focus + .focus-input::before {
+  width: 100%;
+}
+
+.has-val + .focus-input::after {
+  top: -15px;
+}
+
+.has-val + .focus-input::before {
+  width: 100%;
+}
+
+.container-login-form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 11px;
+}
+
+.login-form-btn {
+  font-size: 15px;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19em;
+  height: 40px;
+  max-width: 300px;
+  background: #154e91;
+}
+
+.login-form-btn:hover {
+  cursor: pointer;
+}
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt1 {
+  font-size: 14px;
+  color: #adadad;
+  line-height: 1.5;
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+.txt2 {
+  font-size: 14px;
+  color: #6a7dfe;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .login-form-title {
+    display: none;
+  }
+  .wrap-login {
+    min-width: 40rem;
+  }
 }
