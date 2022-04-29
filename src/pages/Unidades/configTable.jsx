@@ -1,23 +1,19 @@
+import { Grow } from '@mui/material'
 import { color } from '@mui/system'
 
 export const columns = () => {
   const columnsTable = [
     {
       name: 'ID',
-      selector: 'idColaborador',
-      sortable: true
+      selector: 'idUnidade',
+      sortable: true,
+      grow: 0
     },
     {
-      name: 'Nome',
-      selector: 'nome',
+      name: 'Unidades',
+      selector: 'nomeUnidade',
       sortable: true,
       grow: 2
-    },
-    {
-      name: 'Função',
-      selector: 'numeroChip1',
-      sortable: true,
-      grow: 1
     }
   ]
 
