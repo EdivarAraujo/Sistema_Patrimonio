@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import tijIMG from '../../assets/images/tij.svg'
-import footerImage from '../../assets/images/mundoTijuca.png'
+// import tijIMG from '../../assets/images/tij.svg'
+// import footerImage from '../../assets/images/mundoTijuca.png'
+import logo from '../../assets/images/logoTijuca.png'
 import './styles.css'
 
 function SignIn() {
@@ -13,6 +14,7 @@ function SignIn() {
         <div className="wrap-login">
           <form className="login-form">
             <span className="title-form">Sistema Patrimônio</span>
+
             <div className="wrap-input">
               <input
                 className={usuario !== '' ? 'has-val input' : 'input'}

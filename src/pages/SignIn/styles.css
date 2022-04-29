@@ -7,6 +7,7 @@
 .root-login {
   width: 100vw;
   height: 100vh;
+  /* background-image: url(../../assets/images/logoTijuca.png); */
   background-image: url(../../assets/images/bj.jpeg);
   background-size: cover;
   top: 0;
@@ -148,7 +149,7 @@
 
 .focus-input::after {
   font-size: 15px;
-  color: #999999;
+  color: #626e7f;
   line-height: 1.2;
   content: attr(data-placeholder);
   display: block;
