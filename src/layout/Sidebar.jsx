@@ -8,6 +8,7 @@ import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import HomeWorkIcon from '@mui/icons-material/HomeWork';
 import BadgeIcon from '@mui/icons-material/Badge';
+import CreateIcon from '@mui/icons-material/Create';
 
 
 function Sidebar({
@@ -99,7 +100,7 @@ function Sidebar({
               <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/equipamentos' && 'bg-slate-900'}`}>
                 <NavLink end to="/equipamentos" className={`block text-slate-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-slate-200'}`}>
                   <div className="flex items-center">
-                  <PhonelinkIcon/>
+                    <PhonelinkIcon />
 
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Equipamentos</span>
                   </div>
@@ -111,7 +112,7 @@ function Sidebar({
               <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/' && 'bg-slate-900'}`}>
                 <NavLink end to="/" className={`block text-slate-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-slate-200'}`}>
                   <div className="flex items-center">
-                  <PersonIcon/>
+                    <PersonIcon />
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Colaboradores</span>
                   </div>
                 </NavLink>
@@ -122,7 +123,7 @@ function Sidebar({
               <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/movimentacoes' && 'bg-slate-900'}`}>
                 <NavLink end to="/movimentacoes" className={`block text-slate-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-slate-200'}`}>
                   <div className="flex items-center">
-                  <CompareArrowsIcon/>
+                    <CompareArrowsIcon />
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Movimentações</span>
                   </div>
                 </NavLink>
@@ -133,7 +134,7 @@ function Sidebar({
               <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/unidades' && 'bg-slate-900'}`}>
                 <NavLink end to="/unidades" className={`block text-slate-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-slate-200'}`}>
                   <div className="flex items-center">
-                  <ApartmentIcon/>
+                    <ApartmentIcon />
 
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Unidades</span>
                   </div>
@@ -145,7 +146,7 @@ function Sidebar({
               <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/setores' && 'bg-slate-900'}`}>
                 <NavLink end to="/setores" className={`block text-slate-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-slate-200'}`}>
                   <div className="flex items-center">
-                  <HomeWorkIcon/>
+                    <HomeWorkIcon />
 
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Setores</span>
                   </div>
@@ -157,7 +158,7 @@ function Sidebar({
               <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${pathname === '/funcao' && 'bg-slate-900'}`}>
                 <NavLink end to="/funcao" className={`block text-slate-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-slate-200'}`}>
                   <div className="flex items-center">
-                  <BadgeIcon/>
+                    <BadgeIcon />
 
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Função</span>
                   </div>

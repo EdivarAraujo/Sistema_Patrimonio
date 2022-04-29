@@ -1,10 +1,17 @@
-import { color } from '@mui/system'
+import api from "../../services/api"
 
 export const columns = () => {
+  async function handleEdit(idColaborador) {
+    await api.put(`updateCollaborator/${idColaborador}`, {
+      nome: "gabriel"
+    })
+  }
+
   const columnsTable = [
     {
       name: 'ID',
       selector: 'idColaborador',
+      grow: 0,
       sortable: true
     },
     {
@@ -59,7 +66,20 @@ export const columns = () => {
       selector: 'operadoraChip2',
       sortable: true,
       grow: 1
-    }
+    },
+    {
+      name: "Açoẽs",
+      selector: "connect",
+      center: true,
+      grow: 1,
+      Header: 'Action',
+      accessor: 'action',
+      cell: row => (
+        <div>
+          <button onClick={e => handleEdit(row.idColaborador)}>Edit</button>
+        </div>
+      ),
+    },
   ]
 
   return columnsTable

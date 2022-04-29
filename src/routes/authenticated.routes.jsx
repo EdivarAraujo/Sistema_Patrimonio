@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {  Routes, Route  } from "react-router-dom";
-import {Colaboradores,Equipamentos, Movimentacoes, Setores, Unidades, Funcao, } from '../pages';
+import { Routes, Route } from "react-router-dom";
+import { Colaboradores, Equipamentos, Movimentacoes, Setores, Unidades, Funcao, } from '../pages';
 
 
 
@@ -23,16 +23,16 @@ import {Colaboradores,Equipamentos, Movimentacoes, Setores, Unidades, Funcao, } 
 
 
 
- const AuthenticatedRoutes = () => {
+const AuthenticatedRoutes = () => {
 
   return (
     <Routes>
-        <Route exact path="/" element={<Colaboradores/>} />
-        <Route exact path="/equipamentos" element={<Equipamentos/>} />
-        <Route exact path="/movimentacoes" element={<Movimentacoes/>} />
-        <Route exact path="/unidades" element={<Unidades/>} />
-        <Route exact path="/setores" element={<Setores/>} />
-        <Route exact path="/funcao" element={<Funcao/>} />
+      <Route exact path="/" element={<Colaboradores />} />
+      <Route exact path="/equipamentos" element={<Equipamentos />} />
+      <Route exact path="/movimentacoes" element={<Movimentacoes />} />
+      <Route exact path="/unidades" element={<Unidades />} />
+      <Route exact path="/setores" element={<Setores />} />
+      <Route exact path="/funcao" element={<Funcao />} />
     </Routes>
   );
 };

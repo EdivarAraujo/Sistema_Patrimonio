@@ -4,6 +4,6 @@ import SingIn from './auth.routes'
 
 
 export default function Routes() {
-  return 1 == 2 ? <AuthenticatedRoutes/> : <SingIn/> 
+  return 1 == 1 ? <AuthenticatedRoutes/> : <SingIn/> 
     
 }
